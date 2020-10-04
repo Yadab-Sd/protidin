@@ -1,0 +1,155 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 04, 2020 at 05:20 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.2.33
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `protidin_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(10) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `count` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `clients`
+--
+
+CREATE TABLE `clients` (
+  `id` int(10) NOT NULL,
+  `fname` varchar(100) NOT NULL,
+  `lname` varchar(100) DEFAULT NULL,
+  `mobile` varchar(20) NOT NULL,
+  `createdAt` datetime NOT NULL DEFAULT current_timestamp(),
+  `count` int(10) NOT NULL DEFAULT 0,
+  `address` varchar(200) DEFAULT NULL,
+  `totalSpent` int(10) NOT NULL DEFAULT 0,
+  `due` int(10) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `clients`
+--
+
+INSERT INTO `clients` (`id`, `fname`, `lname`, `mobile`, `createdAt`, `count`, `address`, `totalSpent`, `due`) VALUES
+(1, 'Yadab', '', '01733267990', '0000-00-00 00:00:00', 0, 'Khilkhet', 0, 0),
+(2, 'Yadab', NULL, '01753362960', '2020-10-03 15:44:03', 0, NULL, 0, 0),
+(3, 'Nahid', NULL, '(+88) 01521231685.', '2020-10-03 15:44:40', 0, NULL, 0, 0),
+(4, 'Yadab Sd', NULL, '01733267990', '2020-10-03 16:16:59', 0, NULL, 0, 0),
+(5, 'Yadabsss', NULL, '1736446405', '2020-10-03 16:21:47', 0, NULL, 0, 0),
+(6, 'Yadabsss', NULL, '01753362960', '2020-10-03 16:22:57', 0, NULL, 0, 0),
+(7, 'Nahid', NULL, '01753362960', '2020-10-03 16:24:26', 0, NULL, 0, 0),
+(8, 'Yadab', NULL, '1736446405', '2020-10-03 16:26:10', 0, NULL, 0, 0),
+(9, 'Yadab', NULL, '(+88) 01521231685.', '2020-10-03 16:38:41', 0, NULL, 0, 0),
+(10, 'Nahid', NULL, '01733267990', '2020-10-03 16:39:33', 0, NULL, 0, 0),
+(11, 'Yadab', NULL, '01753362960', '2020-10-03 16:54:38', 0, NULL, 0, 0),
+(12, 'Nahid', NULL, '01753362960', '2020-10-03 16:57:01', 0, NULL, 0, 0),
+(13, 'Yadab', NULL, '1736446405', '2020-10-03 17:00:27', 0, NULL, 0, 0),
+(14, 'Yadabsss', NULL, '01753362960', '2020-10-03 17:02:49', 0, NULL, 0, 0),
+(15, 'Nahid', NULL, '01753362960', '2020-10-03 17:08:11', 0, NULL, 0, 0),
+(16, 'Yadab Sd', NULL, '01733267990', '2020-10-03 17:10:39', 0, NULL, 0, 0),
+(17, 'Yadab', NULL, '(+88) 01521231685.', '2020-10-03 17:11:46', 0, NULL, 0, 0),
+(18, 'Nahid', NULL, '01733267990', '2020-10-03 17:17:04', 0, NULL, 0, 0),
+(19, 'Nahid', NULL, '01733267990', '2020-10-03 17:17:29', 0, NULL, 0, 0),
+(20, 'Nahid', NULL, '1733267990', '2020-10-03 17:18:01', 0, NULL, 0, 0),
+(21, 'Yadab Sd', NULL, '01733267990', '2020-10-03 17:19:38', 0, NULL, 0, 0),
+(22, 'Yadab Sd', NULL, '01733267990', '2020-10-03 17:21:49', 0, NULL, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `id` int(10) NOT NULL,
+  `classId` varchar(10) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `description` varchar(200) DEFAULT NULL,
+  `unit` varchar(50) DEFAULT NULL,
+  `stock` int(10) NOT NULL DEFAULT 0,
+  `createdAt` datetime NOT NULL DEFAULT current_timestamp(),
+  `price` int(10) NOT NULL,
+  `sku` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `classId`, `name`, `description`, `unit`, `stock`, `createdAt`, `price`, `sku`) VALUES
+(1, 'one', 'Chips', NULL, NULL, 0, '2020-10-03 17:40:01', 10, '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `clients`
+--
+ALTER TABLE `clients`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `clients`
+--
+ALTER TABLE `clients`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

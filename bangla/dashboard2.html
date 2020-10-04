@@ -1,0 +1,2288 @@
+
+  
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+      <title>Lamia Furniture Online Accounting Billing Inventory Management System - Purchase, Sales, Stock, Billing Software</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lamia Furniture Online Accounting Billing Inventory Management System - Purchase, Sales, Stock, Billing Software."/>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+    <link href="vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="build/css/custom.css?time=1599469148" rel="stylesheet"/>
+    <link href="build/css/style.css" rel="stylesheet"/>
+    <!-- start chosen  -->
+    <link rel="stylesheet" href="vendors/chosen/chosen.css">
+    <!-- end chosen -->
+    <!-- datatables  -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap.min.css" />
+
+    <script src="//code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="jquery-ui.js"></script>
+   <script src="js/client_address.js"></script>
+   <script src="js/invoice_subtotal.js?id=1557063613"></script>
+   <script src="js/invoice_item_total_calc.js?id=1557063613"></script>
+   <script src="vendors/jQuery.print/jQuery.print.min.js"></script>
+   <script src="js/jquery.dataTables.min.js"></script>
+   <script src="js/dataTables.bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Start chart.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+    <!-- End chart.js -->
+    <!-- start selectize -->
+    
+    <link rel="stylesheet" href="css/selectize.bootstrap3.css" type="text/css" />
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <!-- End selectize -->
+    <script type="text/javascript" src="vendors/moment/moment.js"></script>
+    <script type="text/javascript" src="vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <link rel="stylesheet" href="vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+
+    <style>
+ @font-face {
+  font-family: myFirstFont;
+  src: url(build/SolaimanLipi_20-04-07.ttf);
+}
+
+body{
+    font-family: myFirstFont;
+    font-size: 16px;
+}
+h1{
+   font-family: myFirstFont;
+}
+
+h2{
+     font-family: myFirstFont;
+}
+
+h3{
+     font-family: myFirstFont;
+}
+h4{
+     font-family: myFirstFont;
+}
+h5{
+     font-family: myFirstFont;
+}
+h6{
+     font-family: myFirstFont;
+}
+a{
+  font-family: myFirstFont;  
+}
+input{
+    font-family: myFirstFont;  
+}
+td{
+   font-family: myFirstFont;   
+}
+
+.menu-title{
+    font-family: myFirstFont;
+}
+
+.label{
+    font-family: myFirstFont;
+}
+div.selectize-dropdown div.option{
+    cursor: pointer;
+}
+ </style>
+   
+   
+      <style>
+   select.selectpicker{
+    display: inline-block !important;
+   }
+      .nav.side-menu > li.active > a{
+    background: #786F6F;
+   }
+   .left_col{
+    background: #0F0614;
+    width: 100%;
+   }
+   .nav_menu{
+    position: fixed;
+    z-index: 10;
+    width: auto;
+    min-width: 100%;
+    height: 10%;
+    background: #F8FFEB;
+    color: #545454;
+   }
+   
+footer {
+  background: #0F0614;
+  padding: 15px 20px;
+  display: block;
+  color: #545454;
+   }   
+
+   
+   .top_nav .navbar-right{
+    float: left !important;
+    /*margin-left: 12%;*/
+   }
+   .nav.navbar-nav > li > a {
+    color: #545454; }
+
+    .nav.top_menu > li > a {
+      color: #545454; }
+    .nav.side-menu > li > a:hover, .nav.child_menu > li > a:hover{
+        background: #786F6F;
+    }
+   .nav.child_menu li:hover{
+    background: #786F6F;
+   }
+   .nav.child_menu > li > a:hover{
+    background: #2B6454;
+   }
+   
+   .nav li.current-page {
+  background: #2B6454 }
+   
+   div.nav.toggle{
+   }
+   ul.nav.child_menu{
+    background: #786F6F;
+   }
+   div.x_panel{
+    margin-top: 40px;
+   }
+   .form-control[type="text"]{
+        border-radius: 5px;
+        height: 34px;
+        font-weight: bold;
+        font-size: 12px;
+   }
+   .form-control[type="number"]{
+        border-radius: 5px;
+        height: 34px;
+        font-weight: bold;
+        font-size: 12px;
+   }
+   .form-control[type="password"]{
+        border-radius: 5px;
+        height: 34px;
+        font-weight: bold;
+        font-size: 12px;
+   }
+   
+   .company_name_navbar{
+        text-align: left; font-size: 25px; padding: 10px;
+    }
+    .user-profile img{
+        width: 15px;
+        height: 15px;
+    }
+    .chosen-results li.active-result:hover{
+        color: white !important;
+    }
+    .chosen-results li.result-selected{
+        color: white !important;
+        background: skyblue;
+    }
+    .chosen-container{
+        bottom: 10px;
+    }
+   </style>   <style>
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{
+    border: 1px solid #eee;
+}
+   /* Larger than mobile */
+    @media (max-width: 400px) {
+    .language_menu_nav_bar{
+        display: none;        
+    }
+    .billing_nav_topbar_span{
+        display:  none;
+    }
+    div.x_panel{
+        margin-top: 18%;
+    }
+    ul.nav_bar_icons{
+        position: relative;
+        top: -80px;
+       /* left: 12%;*/
+    }
+    .company_name_navbar{
+        padding: 0px;
+        font-size: 18px;
+    }
+    .nav > li > a{
+        padding: 13px 15px 12px;
+    }
+    .top_nav .navbar-right{
+        margin-left: 22%;
+        width: 88%;
+    }
+    .navbar-nav .open .dropdown-menu{
+        right: inherit;
+    }
+    .profile_settings_dropdown_meun{
+        right: 0 !important;
+        left: -9% !important;
+    }
+    
+    .client_details_invoice{
+        width: 50px;
+    }
+    .login_form_box{
+        position: relative;
+        left: 12%;
+    }
+    .new_bill{
+        visibility: hidden;
+    }
+    .new_receive{
+        visibility: hidden;
+    }
+    .new_expense{
+        visibility: hidden;
+    }
+    .new_bill_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_receive_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_expense_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_bill_btn:hover{
+        background: none;
+    }
+    .new_receive_btn:hover{
+        background: none;
+    }
+    .new_expense_btn:hover{
+        background: none;
+    }
+    .company_name_navbar{
+        padding: 0px;
+        font-size: 13px;
+        width: 0px;
+        height: 0px;
+        display: inline-block;
+        visibility: hidden;
+    }
+    .invoice_buttons_menu{
+        position: relative;
+        /*bottom: 30px;*/
+        top: 20px;
+        float: left;
+        display: inline;
+    }
+    .menu_right_li{
+        position: relative;
+        bottom: 37px;
+        /*left: 100px;*/
+        margin-top: 0px !important;
+        /*margin-left: 39px !important;*/
+    }
+    .menu_right_li li{
+        
+    }
+    .new_invoice_top_menu_link_li{
+        width: auto;
+        position: relative !important;
+    }
+    .language_dropdown{
+        width: auto;
+        position: relative !important;
+        top: 14px;
+        margin-right: -30px;
+    }
+    .stock_warning_load{
+        position: relative !important;
+        top: 14px;
+        margin-right: -16px;
+    }
+    .stock_warning_dropdown_container{
+        left: -355% !important;
+    }
+    .notification_dropdown_container{
+        left: -150% !important;
+    }
+    .notification_dropdown{
+        position: relative !important;
+        top: 14px;
+        margin-right: -15px;
+    }
+    .billing_li{
+        position: relative !important;
+        top: 12px;
+    }
+    .notification_bell{
+        width: 0px;
+        visibility: hidden;
+    }
+    .billing_nav_topbar_span{
+        visibility: hidden;
+        width: 0px;
+        display: inline-block;
+    }
+    .billing_angle_down{
+        visibility: hidden;
+        width: 0px;
+    }
+    .stock_warning_angle_down{
+        visibility: hidden;
+        width: 0px;
+    }
+    .language_angle_down{
+        visibility: hidden;
+        width: 0px;
+    }
+    .top_nav .nav > li > a:focus, .top_nav .nav > li > a:hover, .top_nav .nav .open > a, .top_nav .nav .open > a:focus, .top_nav .nav .open > a:hover{
+        background: none;
+    }
+    a.btn-success:hover, a.btn-primary:hover, a.btn-warning:hover, a.btn-danger:hover{
+        background: none;
+    }
+    .dashboard_info_boxes{
+        width: 95% !important;
+        margin: 2%;
+    }
+    }
+    
+    
+    @media (max-width: 300px) {
+    .language_menu_nav_bar{
+        display: none;
+    }
+    .billing_nav_topbar_span{
+        display:  none;
+    }
+    div.x_panel{
+        margin-top: 18%;
+    }
+    ul.nav_bar_icons{
+        position: relative;
+        top: 45px;
+    }
+    .company_name_navbar{
+        padding: 0px;
+        font-size: 18px;
+    }
+    .top_nav .navbar-right{
+        margin-left: -8%;
+    }
+    .login_form_box{
+        position: relative;
+        left: 12%;
+    }
+    .new_bill{
+        visibility: hidden;
+    }
+    .new_receive{
+        visibility: hidden;
+    }
+    .new_expense{
+        visibility: hidden;
+    }
+    .new_bill_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_receive_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_expense_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_bill_btn:hover{
+        background: none;
+    }
+    .new_receive_btn:hover{
+        background: none;
+    }
+    .new_expense_btn:hover{
+        background: none;
+    }
+    .company_name_navbar{
+        padding: 0px;
+        font-size: 13px;
+        width: 0px;
+        height: 0px;
+        display: inline-block;
+        visibility: hidden;
+    }
+    .invoice_buttons_menu{
+        position: relative;
+        /*bottom: 30px;*/
+        top: 20px;
+        display: inline;
+        float: left;
+    }
+    .menu_right_li{
+        position: relative;
+        bottom: 0px;
+        /*left: 100px;*/
+        margin-top: 0px !important;
+        /*margin-left: 39px !important;*/
+    }
+    .billing_nav_topbar_span{
+        visibility: hidden;
+        width: 0px;
+        display: inline-block;
+    }
+    .new_invoice_top_menu_link_li{
+        position: relative !important;
+        top: 10px;
+    }
+    .top_nav .nav > li > a:focus, .top_nav .nav > li > a:hover, .top_nav .nav .open > a, .top_nav .nav .open > a:focus, .top_nav .nav .open > a:hover{
+        background: none;
+    }
+    a.btn-success:hover, a.btn-primary:hover, a.btn-warning:hover, a.btn-danger:hover{
+        background: none;
+    }
+    .dashboard_info_boxes{
+        width: 95% !important;
+        margin: 2%;
+    }
+    
+   }
+    
+    /* Phablet */
+    @media (max-width: 550px) {
+    .login_form_box{
+        position: relative;
+        left: 13.5%;
+    }
+    .language_menu_nav_bar{
+        display: none;        
+    }
+    .new_bill{
+        visibility: hidden;
+    }
+    .new_receive{
+        visibility: hidden;
+    }
+    .new_expense{
+        visibility: hidden;
+    }
+    .new_bill_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_receive_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_expense_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_bill_btn:hover{
+        background: none;
+    }
+    .new_receive_btn:hover{
+        background: none;
+    }
+    .new_expense_btn:hover{
+        background: none;
+    }
+    .company_name_navbar{
+        padding: 0px;
+        font-size: 13px;
+        width: 0px;
+        height: 0px;
+        display: inline-block;
+        visibility: hidden;
+    }
+    .invoice_buttons_menu{
+        position: relative;
+        /*bottom: 30px;*/
+        top: 20px;
+        float: left;
+        display: inline;
+    }
+    .menu_right_li{
+        position: relative;
+        bottom: 37px;
+        /*left: 100px;*/
+        margin-top: 0px !important;
+        /*margin-left: 39px !important;*/
+    }
+    .billing_nav_topbar_span{
+        visibility: hidden;
+        width: 0px;
+        display: inline-block;
+    }
+    .top_nav .nav > li > a:focus, .top_nav .nav > li > a:hover, .top_nav .nav .open > a, .top_nav .nav .open > a:focus, .top_nav .nav .open > a:hover{
+        background: none;
+    }
+    a.btn-success:hover, a.btn-primary:hover, a.btn-warning:hover, a.btn-danger:hover{
+        background: none;
+    }
+    .dashboard_info_boxes{
+        width: 95% !important;
+        margin: 2%;
+    }
+        
+    }
+    
+    /* iPhone 5 */
+    @media (max-width: 565px) {
+    .login_form_box{
+        position: relative;
+        left: 13.5%;
+    }
+    .language_menu_nav_bar{
+        display: none;        
+    }
+    .new_bill{
+        visibility: hidden;
+    }
+    .new_receive{
+        visibility: hidden;
+    }
+    .new_expense{
+        visibility: hidden;
+    }
+    .new_bill_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_receive_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_expense_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_bill_btn:hover{
+        background: none;
+    }
+    .new_receive_btn:hover{
+        background: none;
+    }
+    .new_expense_btn:hover{
+        background: none;
+    }
+    .company_name_navbar{
+        padding: 0px;
+        font-size: 13px;
+        width: 0px;
+        height: 0px;
+        display: inline-block;
+        visibility: hidden;
+    }
+    .invoice_buttons_menu{
+        position: relative;
+        /*bottom: 30px;*/
+        top: 20px;
+        display: inline;
+    }
+    .menu_right_li{
+        position: relative;
+        bottom: 37px;
+        /*left: 100px;*/
+        margin-top: 0px !important;
+        /*margin-left: 39px !important;*/
+    }
+    .billing_nav_topbar_span{
+        visibility: hidden;
+        width: 0px;
+        display: inline-block;
+    }
+    .top_nav .nav > li > a:focus, .top_nav .nav > li > a:hover, .top_nav .nav .open > a, .top_nav .nav .open > a:focus, .top_nav .nav .open > a:hover{
+        background: none;
+    }
+    a.btn-success:hover, a.btn-primary:hover, a.btn-warning:hover, a.btn-danger:hover{
+        background: none;
+    }
+    .dashboard_info_boxes{
+        width: 95% !important;
+        margin: 2%;
+    }
+        
+    }
+    
+    /* Pixel 2 */
+    @media (max-width: 730px) {
+    .login_form_box{
+        position: relative;
+        left: 13.5%;
+    }
+    .language_menu_nav_bar{
+        display: none;        
+    }
+    .new_bill{
+        visibility: hidden;
+    }
+    .new_receive{
+        visibility: hidden;
+    }
+    .new_expense{
+        visibility: hidden;
+    }
+    .new_bill_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_receive_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_expense_btn{
+        width: 20px;
+        background: none;
+        border: none;
+    }
+    .new_bill_btn:hover{
+        background: none;
+    }
+    .new_receive_btn:hover{
+        background: none;
+    }
+    .new_expense_btn:hover{
+        background: none;
+    }
+    .company_name_navbar{
+        padding: 0px;
+        font-size: 13px;
+        width: 0px;
+        height: 0px;
+        display: inline-block;
+        visibility: hidden;
+    }
+    .invoice_buttons_menu{
+        position: relative;
+        /*bottom: 30px;*/
+        top: 20px;
+        display: inline;
+    }
+    .menu_right_li{
+        position: relative;
+        bottom: 37px;
+        /*left: 100px;*/
+        margin-top: 0px !important;
+        /*margin-left: 39px !important;*/
+    }
+    .billing_nav_topbar_span{
+        visibility: hidden;
+        width: 0px;
+        display: inline-block;
+    }
+    .top_nav .nav > li > a:focus, .top_nav .nav > li > a:hover, .top_nav .nav .open > a, .top_nav .nav .open > a:focus, .top_nav .nav .open > a:hover{
+        background: none;
+    }
+    a.btn-success:hover, a.btn-primary:hover, a.btn-warning:hover, a.btn-danger:hover{
+        background: none;
+    }
+    .dashboard_info_boxes{
+        width: 95% !important;
+        margin: 2%;
+    }
+        
+    }
+    
+    /* Tablet */
+    @media (max-width: 750px) {
+       .menu_right_li{
+        left: 0%;
+       }
+       .company_name_navbar{
+        float: left;
+       }
+    }
+    
+    /* Desktop */
+    @media (max-width: 1000px) {
+       .menu_right_li{
+        left: 0%;
+       }
+       .company_name_navbar{
+        float: left;
+       }
+       .new_bill_btn{
+        padding: 2px !important; line-height: 10px !important; top: 12px;
+       }
+       .new_receive_btn{
+        padding: 2px !important; line-height: 10px !important; top: 12px;
+       }
+       .new_expense_btn{
+        padding: 2px !important; line-height: 10px !important; top: 12px;
+       }
+    }
+    
+    /* Desktop HD */
+    @media (max-width: 1200px) {
+      .menu_right_li{
+        left: 0%;
+       }
+       .company_name_navbar{
+        float: left;
+       }
+       .new_bill_btn{
+        padding: 2px !important; line-height: 10px !important; top: 12px;
+       }
+       .new_receive_btn{
+        padding: 2px !important; line-height: 10px !important; top: 12px;
+       }
+       .new_expense_btn{
+        padding: 2px !important; line-height: 10px !important; top: 12px;
+       }
+       .nav_menu{
+        height: 75px !important;
+       }
+    }
+    
+    /* Desktop Full HD */
+    @media (max-width: 2000px) {
+      .menu_right_li{
+        right: 15px;
+        position: relative;
+       }
+       .company_name_navbar{
+        float: left;
+       }
+       .new_bill_btn{
+        padding: 2px !important; line-height: 10px !important; top: 12px;
+       }
+       .new_receive_btn{
+        padding: 2px !important; line-height: 10px !important; top: 12px;
+       }
+       .new_expense_btn{
+        padding: 2px !important; line-height: 10px !important; top: 12px;
+       }
+       .nav_menu{
+        height: 75px !important;
+       }
+    }
+    
+</style>   <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+  </head>  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <style>
+
+        /*.menu_section ul li:hover{
+        background-color: #1C1F22;
+    }*/
+    
+</style>
+<div class="col-sm-3 col-md-3 col-lg-3 left_col">
+          <div class="left_col scroll-view">
+                 
+            <div class="clearfix"></div>
+<div class="profile clearfix">
+              <div class="profile_pic">
+              
+                          <img style="height: 50px;" src="../uploads/53747soft host it.png" alt="..." class="img-circle profile_img">
+                    
+        
+                
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2 style="font-size: 18px;">demo</h2>
+              </div>
+            </div>               <!-- menu profile quick info -->
+     
+      
+            <!-- sidebar menu -->
+            <div style="font-size: 15px;" id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+               
+                <ul class="nav side-menu">
+                  <li><a href="dashboard2.php"><i class="fa fa-tachometer"></i>   ড্যাশবোর্ড </a>
+                   
+                  </li>
+                  
+                  <li><a title="কাস্টমার এবং সরবরাহকারী তৈরি এবং বিস্তারতি তথ্য দেখতে পারবেন"><i class="fa fa-edit"></i>ব্যাক্তি<span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                    
+                      
+                      
+                      <li><a>কাস্টমার</a>
+                        <ul class="nav child_menu">
+                          
+                       
+      <li><a href="form.php">কাস্টমার যু্ক্ত</a></li>
+         
+      <li><a href="contact_list.php">কাস্টমার লিস্ট</a></li>
+         
+      <li><a href="group.php">কাস্টমার গ্রুপ</a></li>
+                                </ul>
+                      </li>
+                      
+                      
+                      <li>
+                        <a>সরবরাহকারী</a>
+                            <ul class="nav child_menu">                                 
+                                 
+      <li><a href="form1.php">নতুন সরবরাহকারী তৈরি</a></li>
+         
+      <li><a href="contact_list1.php"> সরবরাহকারী লিস্ট</a></li>
+         
+      <li><a href="group1.php"> সরবরাহকারী গ্রুপ</a></li>
+                                    </ul>
+                      </li>
+                     
+                       
+                    
+                        
+                    
+                    </ul>
+                  </li>
+                  <li><a title="হিসাব সংক্রান্ত যাবতীয় বিষয় "><i class="fa fa-desktop"></i> লেনদেন <span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                    
+                        <li><a>জমা</a>
+                            <ul class="nav child_menu">
+                                 
+      <li><a href="new_diposit.php">নতুন জমা</a></li>
+                                         
+      <li><a href="money_receipt.php"> টাকার রশিদ</a></li>
+          
+                                
+                            </ul>
+                            
+                        </li>
+                        <li><a>খরচ</a>
+                            <ul class="nav child_menu">
+                                 
+      <li><a href="new_expense.php">নতুন খরচ</a></li>
+                                         
+      <li><a href="PurchPayment.php">ক্রয় পেমেন্ট</a></li>
+                                                                    </ul>
+                        </li>
+                        
+                        <li> <a>এ্যাকাউন্ট</a>
+                            <ul class="nav child_menu" >
+                                 
+      <li><a href="new_bank.php">নতুন এ্যাকাউন্ট তৈরি</a></li>
+                                
+                                 
+      <li><a href="bank_list.php">এ্যাকাউন্ট লিস্ট</a></li>
+                                         
+      <li><a href="account_bl.php">এ্যাকাউন্ট ব্যালেন্স</a></li>
+                                         
+      <li><a href="trans_report.php">অ্যাকাউন্ট স্টেটমেন্ট</a></li>
+                                    </ul>
+                        </li>
+                         
+      <li><a href="transfer.php">ট্রান্সফার</a></li>
+                                 
+      <li><a href="incom_expense.php">লভ্যাংশ</a></li>
+                                                    </ul>
+                  </li>
+                  
+                  
+                  
+                  <li><a><i class="fa fa-table"></i>   বিল/ইনভয়েস  <span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                        
+      <li><a href="new_invoice.php">নতুন বিল</a></li>
+                                 
+      <li><a href="invoice_list.php">বিল লিস্ট</a></li>
+                                 <li><a href="invoice_return.php">বিক্রয় ফেরত</a></li>
+                         <li><a href="sales_return_report.php">বিক্রয় ফেরত রিপোর্ট</a></li>
+                        
+                      <!--
+  <li><a href="sales_return_replace.php"></a></li>
+-->
+                        
+                        
+                     <!--
+<li><a href="Itemslist.php"></a></li>
+-->
+                        
+                      <!--
+  <li><a href="salesReturn.php"></a></li>
+                        
+                        <li><a href="Itemslist.php"></a></li>
+-->
+
+                      
+                    </ul>
+                  </li>
+                  
+                  <li><a><i class="fa fa-clone"></i>পোডাক্ট<span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                    
+                            <li>
+                                <a>পোডাক্ট</a>
+                                <ul class="nav child_menu">
+                          
+                              
+      <li><a href="product.php">প্রোডাক্ট যুক্ত</a></li>
+                                      
+      <li><a href="product_list.php">পোডাক্ট লিস্ট</a></li>
+                              
+                              
+      <li><a href="pgroup.php">পোডাক্ট  গ্রুপ</a></li>
+                                      
+      <li><a href="barcodeImages.php">পোডাক্ট  বারকোড</a></li>
+                                        </ul>
+                            </li>
+                            
+                            <li><a>প্রোডাক্ট ক্রয়</a>
+                                <ul class="nav child_menu">
+                                     
+      <li><a href="pur_product.php">প্রোডাক্ট ক্রয়</a></li>
+                                             
+      <li><a href="all_product1.php">ক্রয় রিপোর্ট</a></li>
+                                             
+      <li><a href="all_proReturn.php">ক্রয় ফেরত</a></li>
+                                             
+      <li><a href="ReturnRproduct1.php">ক্রয় ফেরত রিপোর্ট</a></li>
+                                             
+      <li><a href="all_product.php">ক্রয় মুছুন</a></li>
+                                        </ul>
+                            </li>
+                            
+                            <li>
+                                <a>স্টক</a>
+                                <ul class="nav child_menu">
+                                     
+                         
+      <li><a href="ProductStock.php">স্টক রিপোর্ট</a></li>
+                                
+                        <li><a href="ProductStock2.php?type=all">স্মার্ট স্টক রিপোর্ট</a></li>
+                                </ul>
+                            </li>
+                    
+                        <!--
+<li><a href="productcsv_import.php"></a></li>
+-->
+                        
+                        
+                                                
+                   
+                        
+                     <!--
+ <li><a href="product1.php">Return Product</a></li>
+--><!--
+
+                      <li><a href="product_cat.php">Product Category</a></li>
+-->
+                      
+                      
+                     
+                      
+                       <!--
+<li><a href="fixed_sidebar.html">Services</a></li>
+                      <li><a href="fixed_footer.html">New Services</a></li>
+-->
+                    </ul>
+                  </li>
+                  
+                  <li><a><i class="fas fa-comment-alt"></i> এসএমএস<span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                        
+                         
+      <li><a href="smsSentall.php">কাস্টমার এসএমএস</a></li>
+                                 
+      <li><a href="sms_group.php">কাস্টমার গ্রুপ এসএমএস</a></li>
+                                 
+      <li><a href="smsSentall22.php">সরবরাহকারী এসএমএস</a></li>
+                                 
+      <li><a href="sms_group1.php">সরবরাহকারী গ্রুপ এসএমএস</a></li>
+                                 
+      <li><a href="dueschedule.php">ডিউ সিডিউল এসএমএস</a></li>
+                               
+      <li><a href="duescheList.php">ডিউ সিডিউল রিপোর্ট এসএমএস</a></li>
+                             
+                    <li><a href="http://sms.softhostit.com/login"> এসএমএস  রিপোর্ট</a></li>
+                        
+                    </ul>
+                  </li>
+                  
+                  
+                  <li><a><i class="fas fa-user-tie"></i> স্টাফ <span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                     
+                      <li><a href="create_staff.php">স্টাফ তৈরি</a>
+                      </li>
+                      
+                      <li><a href="staff_list.php">স্টাফ লিস্ট</a>
+                      </li>
+                      
+                      <li><a href="staff_payment.php">স্টাফ পেমেন্ট</a>
+                      </li>
+                      
+                      
+                      <li><a href="staff_salary.php">স্টাফ সেলারি</a>
+                      </li>
+                      
+                      <li><a href="staff_salary_report.php">স্টাফ সেলারি রিপোর্ট</a>
+                      </li>
+                      
+                      <li><a href="staff_attendance.php">স্টাফ হাজিরা</a>
+                      </li>
+                      
+                      
+                      <li><a href="staff_attendance_report.php">স্টাফ হাজিরা রিপোর্ট</a>
+                      </li>
+                   
+                    </ul>
+                  </li>
+                  
+                  
+                  <li><a><i class="fa fa-shopping-basket"></i>  অফিস  কেনাকাটা <span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                     
+                        
+                         
+      <li><a href="PurchEntry.php">কেনাকাটা যুক্ত</a></li>
+                                 
+      <li><a href="PurchReport.php">কেনাকাটা রিপোর্ট</a></li>
+                                 
+      <li><a href="PurchSupplier.php">সরবরাহকারী কেনাকাটা রিপোর্ট</a></li>
+                                 
+      <li><a href="PurchDuePayment.php">বাকি রিপোর্ট</a></li>
+                            </ul>
+                  </li>
+                  <!--
+                    <li><a><i class="fa fa-clone"></i>Services <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="service_view.php">View Services</a></li>  
+                      <li><a href="service_new.php">Add New Service</a></li>
+                     
+                       
+<li><a href="fixed_sidebar.html">Services</a></li>
+                      <li><a href="fixed_footer.html">New Services</a></li>
+
+                    </ul>
+                  </li> -->
+              
+              <li><a><i class="fa fa-bug"></i>  বাকি রিপোর্ট<span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                         
+      <li><a href="allduereport.php">সমস্থ বাকি</a></li>
+                                 
+      <li><a href="cusduereport.php">কাস্টমার অনুসারে বাকি</a></li>
+                                <li><a href="Groupuereport.php">কাস্টমার গ্রুপ অনুসারে বাকি</a></li>
+                    </ul>
+                  </li>
+              
+              
+              
+                  <li><a><i class="fa fa-bug"></i> বিক্রয় রিপোর্ট<span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                    
+                       
+      <li><a href="dailySalesR.php"> বিক্রয় রিপোর্ট</a></li>
+                           <!--
+ <li><a href="trans_report.php">Daily Collection Report</a></li>
+-->
+                    
+                         
+      <li><a href="client_ripor.php">কাস্টমার অনুসারে  </a></li>
+                                 
+      <li><a href="group_ripor.php">কাস্টমার গ্রুপ অনুসারে</a></li>
+                             
+                   <!--
+   <li><a href="#">Income Reports </a></li>
+                      <li><a href="#">Expense Reports</a></li>
+--><!--
+
+                      <li><a href="incom_expense.php">Income Vs Expense</a></li>
+-->
+                     
+                      <!--
+
+                      <li><a href="all_expense.php">All Expense</a></li>
+-->
+                      
+                      
+                      <li><a href="product_riport.php"> পণ্য অনুযায়ী বিক্রয় রিপোর্ট </a></li>
+                                                
+                         
+                        <li><a href="pGroup_riport.php"> পণ্য গ্রুপ  অনুযায়ী বিক্রয় রিপোর্ট </a></li>
+                                                
+                         
+                        
+                    </ul>
+                  </li>
+               
+                   <li><a><i class="fa fa-bug"></i> জমার  রিপোর্ট<span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                    
+                      
+                       
+                      <li><a href="all_income.php">সমস্থ জমার </a></li>
+                                                
+                         
+                        <li><a href="reciveBycat.php">খাত অনুসারে  জমা</a></li>
+                                                
+                         
+                        <li><a href="allIncomeCus.php">কাস্টমার অনুসারে জমা</a></li>
+                                                
+                        
+                        <li><a href="deposit_by_group.php">কাস্টমার গ্রুপ  অনুসারে জমা</a></li>
+                        
+                         <li><a href="deposit_cat_all.php">খাত অনুসারে জমা</a></li>
+                        
+                    </ul>
+                  </li>
+               
+                    <li><a><i class="fa fa-bug"></i> খরচের রিপোর্ট<span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    <ul class="nav child_menu">
+                    
+              
+                       
+                      <li><a href="all_expense.php"> সমস্থ খরচ</a></li>
+                                                
+                         
+                      <li><a href="expenseByCatagory.php">খাত অনুসারে খরচ</a></li>
+                                                
+                       
+                      <li><a href="ExpanceBySupplier.php">সরবরাহকারী পেমেন্ট রিপোর্ট</a></li>
+                                                
+                        <li><a href="expance_cat_all.php">খাত অনুসারে জমা</a></li>
+                        
+                        
+                        <li><a href="expense_sub_cat_all.php">সাব-খাত অনুসারে  জমা</a></li>
+                        
+                    </ul>
+                  </li>
+                  
+               
+                  <li>
+                    <a><i class="fa fa-wrench"></i>সেটিং <span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                           <ul class="nav child_menu">
+                          
+                        
+                        
+                        
+      <li><a href="income_cat.php">জমার খাত তৈরি</a></li>
+                                 
+      <li><a href="income_subcat.php">জমার সাব-খাত তৈরি</a></li>
+                                 
+      <li><a href="expen_cat.php">খরচের খাত তৈরি</a></li>
+                                 
+      <li><a href="expense_subcat.php">খরচের সাব-খাত তৈরি</a></li>
+                                
+                         
+                        <li><a href="payment_meth.php">পেমেন্ট মাধ্যম</a></li>
+                                                  
+                             
+                            <li><a href="com_info.php">কোম্পানী তথ্য</a></li>
+                                                
+                         
+                           <li><a href="setting.php">ইউজার অনুমতি</a></li>
+                                                  
+<!--
+
+  <li><a href="setting1.php">Create Staff Account</a></li>
+-->
+
+                         
+                        <li><a href="BankName.php">ব্যাংক নাম</a></li>
+                                                
+                    </ul>  
+                        
+                  </li> 
+                       
+                        
+                       <li><a href="backup_db.php"><i class="fas fa-database"></i>&nbsp;ডাটাবেজ ব্যাকআপ<span style="font-size: 18px; color: white;" class="fa fa-plus-circle"></span></a>
+                    
+                  </li> 
+                                   <li><a href="server_info.php"><i class="fa fa-bug"></i>সার্ভার ইনফরমেশান</a></li>
+                        
+                        <li style="background-color: #EF9234;"><a target="_blank" href="http://softhostit.com/support/"><i class="fas fa-headset"></i> Soft Host IT Support</a></li>
+                        
+                  <li><a href="logout.php"><i class="fa fa-sign-out"></i>লগআউট</a>
+                        </li> 
+                              
+              
+                </ul>
+              </div>
+
+            </div>
+     
+  <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="top_nav">
+          <div class="nav_menu" style="">
+            <nav>
+              <div class="nav toggle">
+                <a style=""  id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+                       <p style="display: inline-block; padding: 0px; margin: 0px;" class="company_name_navbar col-md-3">Lamia Furniture </p>
+        
+        
+                    <ul style=" z-index: 1;" class="nav navbar-nav navbar-right nav_bar_icons menu_right_li">
+                <li class="new_invoice_top_menu_link_li">
+                <a style="" href="new_invoice.php" class="new_bill_btn btn btn-success btn-sm btn-xs"><img src="icon/bill.png" width="20"/><span class="new_bill">&nbsp;নতুন বিল তৈরি <i class="far fa-plus-square"></i></span></a>
+                </li>
+                <li>
+                  <a style=""  href="new_diposit.php" class="new_receive_btn btn btn-info btn-sm"><img src="icon/income.png" width="20" /><span class="new_receive"> নতুন জমা <i class="far fa-plus-square"></i></span></a>  
+                </li>
+                <li>
+                  <a style=""  href="new_expense.php" class="new_expense_btn btn btn-danger btn-sm"><img src="icon/2budget.png" width="20" /><span class="new_expense"> নতুন খরচ <i class="far fa-plus-square"></i></span></a>  
+                </li>
+                   
+                
+                <li class="dropdown language_dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-language"></i>&nbsp;<span class="language_menu_nav_bar">ভাষা</span>&nbsp;<span style="color: white;" class=" fa fa-angle-down language_angle_down"></span>
+                  </a>
+                  <ul style="width: 150px;" class="dropdown-menu list-unstyled msg_list" role="menu">
+                   
+                    <li><a href="https://palashhossain.com/software/AccountingInventory/dashboard2.php">English</a></li>
+                    
+                    <li><a href="build/SolaimanLipi_20-04-07.ttf">বাংলা ফন্ট ডাউনলোড</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown stock_warning_load">
+                  &nbsp;
+                </li>
+                <script type="text/javascript">
+                    $(function(){
+                       $('.stock_warning_load').load('stock_warning_ajax.php'); 
+                    });
+                </script>
+                <li class="dropdown notification_dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge bg-white">0</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list notification_dropdown_container" role="menu">
+                   
+                                      <!--
+
+                    <li><a href="allOrder.php">See All Order List</a></li>
+-->
+                    
+                  </ul>
+                </li>
+                
+                
+                <li class="billing_li">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img style="width: 40px; height: 40px;" src="../uploads/53747soft host it.png" alt=""/><span class="billing_nav_topbar_span" style="color: white;"><i class="fas fa-cogs"></i></span>
+                    <span class=" fa fa-angle-down billing_angle_down" style="color: white;"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right profile_settings_dropdown_meun">
+                  
+                                        <li><a href="com_info.php"><i class="fas fa-user"></i> প্রোফাইল</a></li>
+                        
+                                                
+                                                      
+                    <li>
+                      <a href="setting.php">
+                        <!--
+<span class="badge bg-red pull-right">50%</span>
+-->
+                        <span><i class="fas fa-cogs"></i> সেটিং</span>
+                      </a>
+                    </li>
+                    
+                                       <!--
+ <li><a href="javascript:;">Help</a></li>
+-->
+                    <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> লগআউট</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            
+            </nav>
+          </div>
+        </div>
+                
+                       <span class="stock_expire_modal_trigger" data-toggle="modal" data-target="#stock_expire_modal"> </span>
+          <div id="stock_expire_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">স্টক ওয়ার্নিং</h4>
+      </div>
+      <div class="modal-body">
+               
+
+                                    <table id="" class="table table-bordered table-striped table-hover">
+             
+                                <thead>
+                                    <tr style="background-color: #6D6357;">
+                                        <th class="text-center">প্রোডাক্ট নাম</th>
+                                        <th class="text-center">গ্রুপ</th>
+                                        <th class="text-center">একক</th>
+                                        <th class="text-center">বর্তমান স্টক</th>
+                                    </tr>
+                                </thead>
+                                <tbody>                              
+                                                <tr>
+                                            
+                <td class="text-center">
+                    <a href="pur_product.php?pid=101">
+                   L25 
+                    </a> 
+                    <input type="hidden" id="stockqty" value="0">   
+                </td>
+                <td class="text-center">27 </td>
+                <td class="text-center">9</td>
+                <td class="text-center"><span style="color:red">0</span></td>
+            </tr>
+                    <tr>
+                                            
+                <td class="text-center">
+                    <a href="pur_product.php?pid=100">
+                   B12+ 
+                    </a> 
+                    <input type="hidden" id="stockqty" value="0">   
+                </td>
+                <td class="text-center">27 </td>
+                <td class="text-center">6</td>
+                <td class="text-center"><span style="color:red">0</span></td>
+            </tr>
+          
+                                </tbody>
+                            </table>
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+           <script type="text/javascript">
+            $('.stock_expire_modal_trigger').click();
+           </script>
+    <style>
+    .font-bold{
+        font-size: 18px;
+    }
+</style>
+
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+            
+           
+                       
+                      <div class="x_panel ">
+       
+           <div class="row">
+           <div class="co-md-12 col-lg-12 col-sm-12">
+           
+           <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #4682B4; border-radius: 2px; width: 250px; margin-right: 20px;">
+                <div class="col-xs-3">
+                    <img style="padding: 10px 0 0 0;" src="icon/bill.png" width="50" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                    
+                    <h3 class="font-bold">৳&nbsp;৭৪৭৮৮.৫৬৯</h3>
+                        <span style="font-size: 17px;">
+                        সর্বমোট বিল</span>
+                    
+                </div>
+                
+                </div>
+                
+                <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #008080; border-radius: 2px; width: 250px; margin-right: 20px;">
+                <div class="col-xs-3">
+                    <img src="icon/income.png" width="50" style="padding-top: 10px;" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                   
+                   <h3 class="font-bold">৳&nbsp;৬৫৫১৪৬৫২</h3>
+                    <span style="font-size: 17px;">   সর্বমোট জমা </span>
+                    
+                    
+                </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #ED5565; border-radius: 2px; width: 250px; margin-right: 20px;">
+                <div class="col-xs-3">
+                    <img style="padding-top: 10px;" src="icon/2budget.png" width="50" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                    
+                    <h3 class="font-bold">৳&nbsp;৫৬৩৭৫</h3>
+                    
+                    <span style="font-size: 17px;">সর্বমোট খরচ</span>
+                    
+                    
+                </div>
+                </div>
+                
+                
+                <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #CD5C5C;  border-radius: 2px; width: 250px;">
+                <div class="col-xs-3">
+                    <img src="icon/conversion.png" width="50" style="padding-top: 10px;" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                    
+                    <h3 class="font-bold">৳&nbsp;-৬৫৪৩১৮৬৩.৪৩১</h3>
+                        
+                    <span style="font-size: 17px;">  সর্বমোট বাকি </span>
+                    
+                    
+                </div>
+                </div>
+                
+                
+           
+           
+            <div class="clearfix"></div>
+            
+            <br />
+            
+            <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #FF2C43;  border-radius: 2px; width: 250px; margin-right: 20px;">
+                <div class="col-xs-3">
+                    <img src="icon/shopping.png" width="50" style="padding-top: 10px;" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                    
+                    <h3 class="font-bold">৳&nbsp;০</h3>
+                        
+                    <span style="font-size: 17px;">দৈনিক বিক্রয়</span>
+                    
+                    
+                </div>
+                </div>
+            
+             <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #822CFF; border-radius: 2px; width: 250px; margin-right: 20px;">
+                <div class="col-xs-3">
+                    <img style="padding: 10px 0 0 0;" src="icon/income-1.png" width="50" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                    
+                    <h3 class="font-bold">৳&nbsp;৪৮৬</h3>
+                        <span style="font-size: 17px;">দৈনিক জমা</span>
+                    
+                </div>
+                
+                </div>
+                
+                <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #2CA2FF; border-radius: 2px; width: 250px; margin-right: 20px;">
+                <div class="col-xs-3">
+                    <img src="icon/1budget.png" width="50" style="padding-top: 10px;" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                   
+                   <h3 class="font-bold">৳&nbsp;০</h3>
+                    <span style="font-size: 17px;"> দৈনিক খরচ </span>
+                    
+                    
+                </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #FF892C; border-radius: 2px; width: 250px;">
+                <div class="col-xs-3">
+                    <img style="padding-top: 10px;" src="icon/balance1.png" width="50" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                    
+                    <h3 class="font-bold">৳&nbsp;৪৮৬</h3>
+                    
+                    <span style="font-size: 17px;"> দৈনিক অবশিষ্ট </span>
+                    
+                    
+                </div>
+                </div>
+                
+                       <!-- Monthly Report -->
+                
+                   <div class="clearfix"></div>
+            
+            <br />
+            
+            <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #b0574d;  border-radius: 2px; width: 250px; margin-right: 20px;">
+                <div class="col-xs-3">
+                    <img src="icon/booking.png" width="50" style="padding-top: 10px;" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                    
+                    <h3 class="font-bold">৳&nbsp;৬৮৩৬</h3>
+                        
+                    <span style="font-size: 17px;">September   বিক্রয়</span>
+                    
+                    
+                </div>
+                </div>
+            
+             <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #41894d; border-radius: 2px; width: 250px; margin-right: 20px;">
+                <div class="col-xs-3">
+                    <img style="padding: 10px 0 0 0;" src="icon/booking.png" width="50" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                    
+                    <h3 class="font-bold">৳&nbsp;৬৮৫৬</h3>
+                        <span style="font-size: 17px;">September  জমা</span>
+                    
+                </div>
+                
+                </div>
+                
+                <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #873b51; border-radius: 2px; width: 250px; margin-right: 20px;">
+                <div class="col-xs-3">
+                    <img src="icon/booking.png" width="50" style="padding-top: 10px;" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                   
+                   <h3 class="font-bold">৳&nbsp;৫৬০০০</h3>
+                    <span style="font-size: 17px;"> September  খরচ </span>
+                    
+                    
+                </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-12 dashboard_info_boxes" style="background-color: #00688B; border-radius: 2px; width: 250px;">
+                <div class="col-xs-3">
+                    <img style="padding-top: 10px;" src="icon/booking.png" width="50" />
+                </div>
+                <div style="color: white;" class="col-xs-9">
+                    
+                    <h3 class="font-bold">৳&nbsp;-৪৯১৪৪</h3>
+                    
+                    <span style="font-size: 17px;"> September  অবশিষ্ট </span>
+                    
+                    
+                </div>
+                </div>
+                
+                
+                
+                </div>
+                
+           
+           
+            <div class="clearfix"></div>
+            
+            
+            
+            <hr />
+            
+            
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                                
+                <canvas id="horizontal_week_view_sales" style="height: 300px; width: 100%;"></canvas>
+                <script>
+                    
+                    var horizontal_week_view_sales = document.getElementById('horizontal_week_view_sales');
+                    var horizontal_myBarChart = new Chart(horizontal_week_view_sales, {
+                                type: 'horizontalBar',
+                                data: {
+                                    labels: ["7 Sep","6 Sep","5 Sep","4 Sep","3 Sep","2 Sep","1 Sep"],
+                                    datasets: [{
+                                        label: 'Sales',
+                                        data: [0,0,290,1409.5,850,889.5,1100],
+                                        backgroundColor: ["rgba(189, 77, 25, 0.4)","rgba(108, 0, 134, 0.4)","rgba(108, 125, 186, 0.4)","rgba(162, 82, 87, 0.4)","rgba(140, 137, 96, 0.4)","rgba(66, 196, 63, 0.4)","rgba(165, 22, 146, 0.4)"],
+                                        borderColor: ["rgba(33, 66, 149, 1)","rgba(106, 171, 234, 1)","rgba(55, 175, 96, 1)","rgba(250, 139, 178, 1)","rgba(18, 161, 97, 1)","rgba(136, 106, 122, 1)","rgba(134, 9, 59, 1)"],
+                                        borderWidth: 1
+                                    }]
+                                },
+                                options: {
+                                }
+                            });
+                </script>
+                
+
+	
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-4">
+               
+                
+                <canvas id="horizontal_week_view_receive" style="height: 300px; width: 100%;"></canvas>
+                <script>
+                    
+                    var horizontal_week_view_receive = document.getElementById('horizontal_week_view_receive');
+                    var horizontal_myBarChart = new Chart(horizontal_week_view_receive, {
+                                type: 'horizontalBar',
+                                data: {
+                                    labels: ["7 Sep","6 Sep","5 Sep","4 Sep","3 Sep","2 Sep","1 Sep"],
+                                    datasets: [{
+                                        label: 'Receive',
+                                        data: [486,0,1060,0,0,4810,500],
+                                        backgroundColor: ["rgba(189, 77, 25, 0.4)","rgba(108, 0, 134, 0.4)","rgba(108, 125, 186, 0.4)","rgba(162, 82, 87, 0.4)","rgba(140, 137, 96, 0.4)","rgba(66, 196, 63, 0.4)","rgba(165, 22, 146, 0.4)"],
+                                        borderColor: ["rgba(33, 66, 149, 1)","rgba(106, 171, 234, 1)","rgba(55, 175, 96, 1)","rgba(250, 139, 178, 1)","rgba(18, 161, 97, 1)","rgba(136, 106, 122, 1)","rgba(134, 9, 59, 1)"],
+                                        borderWidth: 1
+                                    }]
+                                },
+                                options: {
+                                    
+                                }
+                            });
+                </script>
+            </div>
+            
+            
+            <div class="col-lg-4 col-md-4 col-sm-4">
+               
+                
+                <canvas id="horizontal_week_view_expense" style="height: 300px; width: 100%;"></canvas>
+                <script>
+                    
+                    var horizontal_week_view_expense = document.getElementById('horizontal_week_view_expense');
+                    var horizontal_myBarChart = new Chart(horizontal_week_view_expense, {
+                                type: 'horizontalBar',
+                                data: {
+                                    labels: ["7 Sep","6 Sep","5 Sep","4 Sep","3 Sep","2 Sep","1 Sep"],
+                                    datasets: [{
+                                        label: 'Expense',
+                                        data: [0,0,0,0,0,56000,0],
+                                        backgroundColor: ["rgba(189, 77, 25, 0.4)","rgba(108, 0, 134, 0.4)","rgba(108, 125, 186, 0.4)","rgba(162, 82, 87, 0.4)","rgba(140, 137, 96, 0.4)","rgba(66, 196, 63, 0.4)","rgba(165, 22, 146, 0.4)"],
+                                        borderColor: ["rgba(33, 66, 149, 1)","rgba(106, 171, 234, 1)","rgba(55, 175, 96, 1)","rgba(250, 139, 178, 1)","rgba(18, 161, 97, 1)","rgba(136, 106, 122, 1)","rgba(134, 9, 59, 1)"],
+                                        borderWidth: 1
+                                    }]
+                                },
+                                options: {
+                                    
+                                }
+                            });
+                </script>
+            </div>
+            
+           
+           <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                        <canvas id="sales_amount_bar_chart" style="height: 300px; width: 100%;"></canvas>
+                        <script>
+                        var sales_amount_bar_chart = document.getElementById('sales_amount_bar_chart');
+                        var sales_amount_bar_display = new Chart(sales_amount_bar_chart, {
+                            type: 'bar',
+                            data: {
+                                labels: [ '1 Sep 2020','2 Sep 2020','3 Sep 2020','4 Sep 2020','5 Sep 2020','7 Sep 2020',  ],
+                                datasets: [{
+                                    label: 'Sales',
+                                    data: ['1265','18768.06','850','1409.5','1414.8','0',],
+                                    backgroundColor: [
+                                    'rgba(37, 239, 112, 0.5)','rgba(136, 117, 144, 0.5)','rgba(255, 110, 251, 0.5)','rgba(3, 101, 47, 0.5)','rgba(151, 202, 38, 0.5)','rgba(149, 70, 112, 0.5)',                                     
+                                    ],
+                                    borderColor: [
+                                    'rgba(158, 119, 99, 1)','rgba(151, 156, 74, 1)','rgba(44, 55, 176, 1)','rgba(22, 44, 66, 1)','rgba(250, 103, 196, 1)','rgba(218, 182, 190, 1)',                                     
+                                    ],
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                        </script>
+                        
+                        
+                    
+                    
+          </div>
+          </div>
+           
+           
+           <br />
+           <br />
+           
+           <div class="row">
+            <div class="col-md-12">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                        <canvas id="top_products_items_sold" style="height: 300px; width: 100%;"></canvas>
+                        <script>
+                        var top_products_items_sold = document.getElementById('top_products_items_sold');
+                        var top_products_items_sold_display = new Chart(top_products_items_sold, {
+                            type: 'bar',
+                            data: {
+                                labels: [ '','','','','','','','','','','','',  ],
+                                datasets: [{
+                                    label: 'Items Sold',
+                                    data: ['2002','48','45','20','15','12','10','9','6','3','1','-1', ],
+                                    backgroundColor: [
+                                     'rgba(71, 219, 74, 0.5)','rgba(26, 56, 197, 0.5)','rgba(172, 102, 155, 0.5)','rgba(146, 90, 156, 0.5)','rgba(75, 238, 62, 0.5)','rgba(209, 103, 128, 0.5)','rgba(27, 9, 54, 0.5)','rgba(199, 100, 7, 0.5)','rgba(86, 97, 76, 0.5)','rgba(70, 229, 97, 0.5)','rgba(138, 208, 8, 0.5)','rgba(109, 152, 4, 0.5)', 
+                                    ],
+                                    borderColor: [
+                                    'rgba(93, 187, 96, 0.5)','rgba(88, 35, 114, 0.5)','rgba(177, 178, 101, 0.5)','rgba(20, 102, 24, 0.5)','rgba(20, 248, 109, 0.5)','rgba(37, 8, 22, 0.5)','rgba(230, 42, 139, 0.5)','rgba(244, 89, 154, 0.5)','rgba(171, 152, 232, 0.5)','rgba(152, 45, 43, 0.5)','rgba(234, 217, 245, 0.5)','rgba(246, 98, 34, 0.5)', 
+                                    ],
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                        </script>
+                        
+                        
+                    
+                    
+          </div>
+            </div>
+           </div>
+           
+           <br />
+           <br />
+           
+           
+           
+          <div class="row">
+          
+          <div class="col-lg-5 col-md-5 col-sm-5">
+
+                                        <canvas id="receive_amount_bar_chart" style="height: 300px; width: 100%;"></canvas>
+                        <script>
+                        var receive_amount_bar_chart = document.getElementById('receive_amount_bar_chart');
+                        var receive_amount_bar_display = new Chart(receive_amount_bar_chart, {
+                            type: 'bar',
+                            data: {
+                                labels: [ '17 Aug 2020','18 Aug 2020','19 Aug 2020','20 Aug 2020','22 Aug 2020','25 Aug 2020','26 Aug 2020','27 Aug 2020','28 Aug 2020','29 Aug 2020','30 Aug 2020','31 Aug 2020','1 Sep 2020','2 Sep 2020','5 Sep 2020','7 Sep 2020',  ],
+                                datasets: [{
+                                    label: 'Receive Amount',
+                                    data: ['3310','12500','3330','32000','200','65410565','7','1340','831','36100','7113','500','500','4810','1060','486',],
+                                    backgroundColor: [
+                                    'rgba(7, 180, 101, 0.5)','rgba(4, 225, 232, 0.5)','rgba(69, 183, 97, 0.5)','rgba(80, 231, 24, 0.5)','rgba(4, 25, 104, 0.5)','rgba(99, 195, 212, 0.5)','rgba(185, 248, 94, 0.5)','rgba(59, 18, 251, 0.5)','rgba(47, 38, 130, 0.5)','rgba(162, 14, 224, 0.5)','rgba(84, 82, 140, 0.5)','rgba(189, 44, 56, 0.5)','rgba(178, 2, 186, 0.5)','rgba(50, 43, 41, 0.5)','rgba(53, 101, 107, 0.5)','rgba(17, 254, 123, 0.5)',                                     
+                                    ],
+                                    borderColor: [
+                                    'rgba(102, 166, 78, 1)','rgba(177, 51, 136, 1)','rgba(124, 245, 83, 1)','rgba(27, 114, 144, 1)','rgba(72, 97, 153, 1)','rgba(129, 158, 38, 1)','rgba(88, 9, 54, 1)','rgba(51, 111, 228, 1)','rgba(202, 210, 167, 1)','rgba(112, 14, 240, 1)','rgba(221, 147, 208, 1)','rgba(93, 208, 73, 1)','rgba(50, 132, 16, 1)','rgba(148, 248, 74, 1)','rgba(92, 176, 203, 1)','rgba(1, 196, 17, 1)',                                     
+                                    ],
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                        </script>
+                        
+                        
+                    
+                    
+          </div>
+          
+          <div class="col-md-1 col-lg-1 col-sm-1">&nbsp;</div>
+          <div class="col-lg-5 col-md-5 col-sm-5">
+
+                                        <canvas id="expense_amount_bar_chart" style="height: 300px; width: 100%;"></canvas>
+                        <script>
+                        var expense_amount_bar_chart = document.getElementById('expense_amount_bar_chart');
+                        var expense_amount_bar_display = new Chart(expense_amount_bar_chart, {
+                            type: 'bar',
+                            data: {
+                                labels: [ '25 Aug 2020','27 Aug 2020','2 Sep 2020',  ],
+                                datasets: [{
+                                    label: 'Expense Amount',
+                                    data: ['25','350','56000',],
+                                    backgroundColor: [
+                                    'rgba(141, 91, 8, 0.5)','rgba(214, 134, 161, 0.5)','rgba(93, 255, 111, 0.5)',                                     
+                                    ],
+                                    borderColor: [
+                                    'rgba(9, 233, 25, 1)','rgba(38, 184, 101, 1)','rgba(208, 30, 6, 1)',                                     
+                                    ],
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                        </script>
+                        
+                        
+                    
+                    
+          </div>
+          
+          </div>
+          <br />
+          <br />
+                   <!--
+ <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+          <canvas id="dognut2" style="height: 300px; width: 100%;"></canvas>
+          <script type="text/javascript">
+          var dognut = document.getElementById('dognut');
+          var myPieChart = new Chart(dognut, {
+                type: 'pie',
+                data: {
+                        datasets: [{
+                            data: [10, 20, 30],
+                            backgroundColor: ['cyan','magenta','brown']
+                        }],
+                        labels: [
+                            'data1',
+                            'data2',
+                            'data3'
+                        ]
+                    }
+                
+            });
+          </script>
+          </div>
+                  
+            </div>
+           
+-->
+            
+        
+    </div>
+          
+         
+          <!-- /top tiles -->
+
+          
+         
+
+          
+
+
+          
+        </div>
+        <!-- /page content -->
+
+        <script src="js/jscolor.js"></script>
+<!-- footer content -->
+        <footer>
+          <div class="pull-right">
+                                      © 2017-2020 All Rights Reserved. : <a target="_blank" href="https://softhostit.com/">Soft Host IT</a> V 2.0
+                                  
+             
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- start chosen select plugin -->
+    
+   <!--
+ <script src="vendors/chosen/docsupport/chosen.jquery.js" type="text/javascript"></script>
+    <script src="vendors/chosen/docsupport/prism.js" type="text/javascript" charset="utf-8"></script>
+    <script src="vendors/chosen/docsupport/init.js" type="text/javascript" charset="utf-8"></script>
+  
+-->
+  <!-- end chosen select plugin -->
+    
+    
+    <!-- jQuery -->
+    
+    
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    
+    
+    <!-- DateJS -->
+    <script src="vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="js/moment/moment.min.js"></script>
+    <script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+    <!-- add new line in add new service -->
+    
+    <!-- bootstrap-daterangepicker -->
+    <script>
+      $(document).ready(function() {
+
+        var cb = function(start, end, label) {
+          console.log(start.toISOString(), end.toISOString(), label);
+          $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        };
+
+        var optionSet1 = {
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment(),
+          minDate: '01/01/2012',
+          maxDate: '12/31/2015',
+          dateLimit: {
+            days: 60
+          },
+          showDropdowns: true,
+          showWeekNumbers: true,
+          timePicker: false,
+          timePickerIncrement: 1,
+          timePicker12Hour: true,
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          opens: 'left',
+          buttonClasses: ['btn btn-default'],
+          applyClass: 'btn-small btn-primary',
+          cancelClass: 'btn-small',
+          format: 'MM/DD/YYYY',
+          separator: ' to ',
+          locale: {
+            applyLabel: 'Submit',
+            cancelLabel: 'Clear',
+            fromLabel: 'From',
+            toLabel: 'To',
+            customRangeLabel: 'Custom',
+            daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+            monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            firstDay: 1
+          }
+        };
+        $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+        $('#reportrange').daterangepicker(optionSet1, cb);
+        $('#reportrange').on('show.daterangepicker', function() {
+          console.log("show event fired");
+        });
+        $('#reportrange').on('hide.daterangepicker', function() {
+          console.log("hide event fired");
+        });
+        $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+          console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+        });
+        $('#reportrange').on('cancel.daterangepicker', function(ev, picker) {
+          console.log("cancel event fired");
+        });
+        $('#options1').click(function() {
+          $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+        });
+        $('#options2').click(function() {
+          $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+        });
+        $('#destroy').click(function() {
+          $('#reportrange').data('daterangepicker').remove();
+        });
+      });
+    </script>
+    <!-- /bootstrap-daterangepicker -->
+
+
+    
+    
+
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#button-icon" ).button({
+	icon: "ui-icon-gear",
+	showLabel: false
+});
+
+
+
+$( "#radioset" ).buttonset();
+
+
+
+
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true,
+    dateFormat: 'dd/mm/yy',
+    changeMonth: true,
+    changeYear: true
+    
+});
+$( ".datepicker" ).datepicker({
+        inline: true,
+    dateFormat: 'dd/mm/yy',
+      changeMonth: true,
+      changeYear: true
+    });
+$("#datepicker_two").datepicker({
+    dateFormat: 'dd/mm/yy',
+    changeMonth: true,
+    changeYear: true
+  });
+  $("#datepicker_three").datepicker({
+    dateFormat: 'dd/mm/yy',
+    changeMonth: true,
+    changeYear: true
+  });
+  $( "#datepicker_normal_one" ).datepicker({
+    changeMonth: true,
+    changeYear: true
+  });
+  $( "#datepicker_normal_two" ).datepicker({
+    changeMonth: true,
+    changeYear: true
+  });
+  $( "#datepicker_normal_three" ).datepicker({
+    changeMonth: true,
+    changeYear: true
+  });
+  $( "#datepicker_normal_four" ).datepicker({
+    changeMonth: true,
+    changeYear: true
+  });
+  $( "#datepicker_normal_five" ).datepicker({
+    changeMonth: true,
+    changeYear: true
+  });
+
+
+
+$( ".datepickerMinDate" ).datepicker({ inline: true, minDate: +1 });
+$( ".datepickerMaxDate" ).datepicker({ inline: true, maxDate: 0 });
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+
+<script>
+    var $selectt = $("select").selectize({}); 
+    
+$('#datatable').DataTable();
+
+$(function(){
+   $('.account_list_select').on('change',function(){
+        var id = $(this).val();
+        $.post('account_bl_ajax.php',{id:id}).always(function(data){
+             $('.account_balance_show').html(data);
+        });
+   }); 
+});
+</script>
+<style>
+    .shortcut_menu_button{
+        border-radius: 20px;
+        background: darkgreen;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        z-index: 510;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        padding: 8px;
+        width: 40px;
+        text-align: center;
+    }
+    .shortcut_menu_items{
+        background: transparent;
+        position: fixed;
+        bottom: 100px;
+        right: 10px;
+        z-index: 510;
+        width: 200px;
+        display: none;
+    }
+    .shortcut_menu_item{
+        background: darkgreen;
+        padding: 2px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    .shortcut_menu_item a{
+        color: white;
+        font-weight: normal;
+        font-size: 10px;
+    }
+    .dt-button{
+        background: teal;
+        color: white;
+        border: 1px solid darkcyan;
+    }
+    
+</style>
+<div class="shortcut_menu_items">
+    <div style="text-align: right; cursor: pointer;">
+        <a href="shortcut_menu_manage.php"><i class="fa fa-cog" aria-hidden="true"></i></a>
+        <i class="fa fa-window-close close_shortcut_menu_items" aria-hidden="true"></i>
+    </div>
+            <div class="shortcut_menu_item">
+            <a href="ccdd">laalon</a>
+        </div>
+            
+</div>
+<div class="shortcut_menu_button">
+    <i class="fa fa-plus"></i>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('.shortcut_menu_items').hide();
+        $('.shortcut_menu_button').on('click',function(){
+            $('.shortcut_menu_items').toggle();
+        });
+        $('.close_shortcut_menu_items').on('click',function(){
+            $('.shortcut_menu_items').toggle();
+        });
+    });
+</script>  </body>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71783610-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-71783610-5');
+</script>
+</html>
+
