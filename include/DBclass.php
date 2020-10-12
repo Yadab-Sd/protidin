@@ -60,7 +60,7 @@
 
     #query for info
     public function DBtrdelete($tname,$con="0"){
-      $result = $this->connection->query("DELETE FROM $tname WHERE sl=$con");
+      $result = $this->connection->query("DELETE FROM $tname WHERE id=$con");
       if(!$result){
         die("Query Failed ! ".$this->connection->error);
       }
@@ -68,7 +68,7 @@
     
     #query for info
     public function DBtrupdate($tname,$set="", $con="0"){
-      $result = $this->connection->query("UPDATE $tname SET $set WHERE sl=$con");
+      $result = $this->connection->query("UPDATE $tname SET $set WHERE id=$con");
       if(!$result){
         die("Query Failed ! ".$this->connection->error);
       }
@@ -76,7 +76,7 @@
     }
   }
 
-
-  $db=new DBclass(["localhost", "root", "", "protidin_db"]);
-
+  $var = (array)$json;
+  $db = new DBclass(array_values($var));
+  
  ?>

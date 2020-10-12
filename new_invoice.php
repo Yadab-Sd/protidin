@@ -28,47 +28,47 @@
 
   <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
   <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
   <!-- <script src="jquery-ui.js"></script> -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> -->
 
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="js/client_address.js"></script>
-  <script src="js/invoice_subtotal.js?id=1557063613"></script>
-  <script src="js/invoice_item_total_calc.js?id=1557063613"></script>
-  <script src="vendors/jQuery.print/jQuery.print.min.js"></script>
-  <script src="js/jquery.dataTables.min.js"></script>
-  <script src="js/dataTables.bootstrap.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
-  <script src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/client_address.js"></script>
+  <script type="text/javascript" src="js/invoice_subtotal.js?id=1557063613"></script>
+  <script type="text/javascript" src="js/invoice_item_total_calc.js?id=1557063613"></script>
+  <script type="text/javascript" src="vendors/jQuery.print/jQuery.print.min.js"></script>
+  <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Start chart.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
   <!-- End chart.js -->
   <!-- start selectize -->
 
   <link rel="stylesheet" href="css/selectize.bootstrap3.css" type="text/css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
   <!-- End selectize -->
   <script type="text/javascript" src="vendors/moment/moment.js"></script>
   <script type="text/javascript" src="vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
@@ -77,7 +77,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
 
 </head>
 
@@ -627,7 +627,7 @@
           </nav>
         </div>
       </div>
-      
+
       <div class="right_col" role="main">
 
         <div class="clearfix"></div>
@@ -641,12 +641,25 @@
 
               <div class="x_content" style="background-color: white;">
 
-
-
+                <?php 
+                $msg = "";
+                if($_SERVER["REQUEST_METHOD"] == "POST") {
+                  $totals = $_REQUEST['payment']+$_REQUEST['invoice_due_total'];
+                  $fields = "`client_id`, `invoice_number`, `product_id`, `discount`, `transport`, `account`, `in_cat`, `payment`, `invoice_due_total`, `vat`, `total`";
+                  $values = "'".$_REQUEST['client_id']."', '".$_REQUEST['invoice_number']."', '".$_REQUEST['item_ids']."', '".$_REQUEST['discount']."',
+                   '".$_REQUEST['transport']."', '".$_REQUEST['account']."', '".$_REQUEST['in_cat']."',
+                    '".$_REQUEST['payment']."', '".$_REQUEST['invoice_due_total']."', '".$_REQUEST['vat']."', '".$totals."'";
+                  $result = $db->DBtrinsert('invoices', $fields, $values);
+                  if($result) {
+                    $result2 = $db->DBtrupdate('clients', "`due` = ".$_REQUEST['invoice_due_total']."", "".$_REQUEST['client_id']."");
+                    $msg = "Invoice created successfully";
+                  }
+                } ?>
+                <p style="color: red;text-align: center;">
+                  <?php if($msg) {echo $msg;} ?>
+                </p>
                 <form id="new_invoice_form_f" action="new_invoice.php" method="post">
                   <div class="col-md-8 col-sm-12 col-xs-12">
-
-
                     <table class="table table-hover">
                       <tr>
                         <td style="width: 20%;">
@@ -674,40 +687,31 @@
                           <br /><br />
                         </td>
                       </tr>
-
-
-
-
                       <tr class="">
                         <td class="client_details_invoice"><strong>Details</strong></td>
                         <td class="client_address_load"></td>
                       </tr>
                     </table>
-
-                    <!--
- <div class="form-group">  
-                     <div class="input-group">  
-                          <span class="input-group-addon">Full Name</span>
-                            
-                          <input type="text" name="search_text" id="search_text" placeholder="Search by Company Name" class="form-control" />  
-                     </div>  
-                </div>  
-                <br />  
-                <div id="result"></div>  
-                
--->
                   </div>
 
                   <div class="col-md-4 col-sm-12 col-xs-12">
-
-
                     <div class="form-group">
                       <label class="control-label col-md-4 col-sm-3 col-xs-12" for="first-name">Invoice ID<span class="required">*</span>
                       </label>
                       <div class="col-md-8 col-sm-6 col-xs-12">
+                      <?php
+                        $result = $db->DBtview('invoices');
+                        if ($result) {
+                            while ($arr = $result->fetch_assoc()) {
+                                $id = $arr['id']+1;
+                            }
+                        } else {
+                            $id = 1;
+                        }
+                      ?>
 
-                        <input type="hidden" name="invoi_number" value="123" />
-                        <input disabled="" name="invoi_number" value="123" type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12" />
+                        <input type="hidden" name="invoice_number" value=<?php echo $id; ?> />
+                        <input disabled="" name="invoice_number" value=<?php echo $id; ?> type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12" />
                       </div>
                     </div>
                     <br /><br />
@@ -717,45 +721,41 @@
                         <input readonly="" placeholder="07/09/2020" type="text" id="datepicker_three" name="date_issue" required="required" class="form-control col-md-7 col-xs-12" value="07/09/2020" />
                       </div>
                     </div>
-
                     <br /><br />
-
-
                   </div>
 
                   <div class="item_container col-md-12">
                     <div class="item_line_one">
-
                       <div class="">
                         <table class="table table-bordered table-condensed">
                           <tr>
                             <td style="width: 10%;"><i style="font-size: 50px;" class="fa fa-barcode"></i></td>
                             <td style="width: 80%;" class="item_name_dropdownone_product_select">
+                            <input type='hidden' value='' id="item_ids" name="item_ids" />
                               <select name="item_id" class="item_name_dropdownone select_product_drop form-control" style="margin-top: -5px;">
                                 <option></option>
-                                
                                 <?php
-                            $records = $db->DBtview('products');
-                            if ($records) {
-                              while ($arr = $records->fetch_assoc()) {
-                            ?>
-                                <option style="color: black; font-size: 16px;" value=<?php echo $arr['id']; ?>>
-                                  <?php echo $arr['sku']; ?> : 
-                                  <?php echo $arr['name']; ?> : 
-                                  <?php echo $arr['unit']; ?>
-                                </option>
-                            <?php
-                              }
-                            } else {
-                              exit('No data found');
-                            }
-                            ?>
+                                $records = $db->DBtview('products');
+                                if ($records) {
+                                  while ($arr = $records->fetch_assoc()) {
+                                    if(!$arr['stock']) continue;
+                                ?>
+                                    <option style="color: black; font-size: 16px;" value=<?php echo $arr['id']; ?>>
+                                      <?php echo $arr['sku']; ?> :
+                                      <?php echo $arr['name']; ?> :
+                                      <?php echo $arr['unit']; ?>
+                                    </option>
+                                <?php
+                                  }
+                                } else {
+                                  exit('No data found');
+                                }
+                                ?>
                               </select>
                             </td>
                           </tr>
                         </table>
                       </div>
-
                     </div>
                     <br />
                     <div class="table-responsive">
@@ -770,32 +770,22 @@
                           </td>
 
                           <td class="col-md-2">
-                            <span>Price</span>
+                            <span>Unit</span>
                           </td>
 
                           <td class="col-md-1">
                             <span>Quantity </span>
                           </td>
 
-
-
                           <td class="col-md-1">
-                            <span style="text-align: center;">Unit </span>
+                            <span style="text-align: center;">Price </span>
                           </td>
                           <td class="col-md-1">
                             <span style="text-align: center;">Total</span></td>
                           <td class="col-md-1"><span style="text-align: center;">Remove</span></td>
                         </tr>
 
-
-
-
-
-
-
                       </table>
-
-
                     </div>
                     <br />
                     <br />
@@ -837,9 +827,6 @@
                         </label>
                         <div class="col-md-8 col-sm-6 col-xs-12">
                           <input type="text" name="transport" class="form-control col-md-7 col-xs-12 invoice_transport" />
-
-
-
                         </div>
                       </div><br /><br />
 
@@ -850,17 +837,20 @@
 
                           <select required="" name="account" class="form-control">
                             <option value="">--Select--</option>
-                            <option value="23">A.&.A Bricks Pabna</option>
-
-                            <option value="22">Bikash</option>
-
-                            <option value="19">Cash</option>
-
-                            <option value="20">IBBL</option>
-
-                            <option value="21">Mohasin Kabir</option>
-
-
+                            <?php
+                                $records = $db->DBtview('accounts');
+                                if ($records) {
+                                  while ($arr = $records->fetch_assoc()) {
+                                ?>
+                                    <option style="color: black; font-size: 16px;" value=<?php echo $arr['id']; ?>>
+                                      <?php echo $arr['name']; ?>
+                                    </option>
+                                <?php
+                                  }
+                                } else {
+                                  echo 'No data found';
+                                }
+                                ?>
 
                           </select>
                         </div>
@@ -874,13 +864,20 @@
 
                           <select required="" name="in_cat" class="form-control">
                             <option value="">--Select--</option>
-                            <option value="10">Furniture sell</option>
-
-                            <option value="13">Other</option>
-
-                            <option value="12">Sallary</option>
-
-
+                            <?php
+                                $records = $db->DBtview('categories');
+                                if ($records) {
+                                  while ($arr = $records->fetch_assoc()) {
+                                ?>
+                                    <option style="color: black; font-size: 16px;" value=<?php echo $arr['id']; ?>>
+                                      <?php echo $arr['name']; ?>
+                                    </option>
+                                <?php
+                                  }
+                                } else {
+                                 echo 'No data found';
+                                }
+                                ?>
 
                           </select>
                         </div>
@@ -888,16 +885,13 @@
                       <br />
                       <br />
                       <div class="form-group">
-                        <label class="control-label col-md-4 col-sm-3 col-xs-12" for="last-name">Payment :
-                        </label>
+                        <label class="control-label col-md-4 col-sm-3 col-xs-12" for="last-name">Payment</label>
                         <div class="col-md-8 col-sm-6 col-xs-12">
                           <input type="text" required="" name="payment" class="form-control col-md-7 col-xs-12 invoice_payment" />
                         </div>
                       </div>
 
                       <br /><br />
-
-
 
                       <div class="form-group">
                         <label class="control-label col-md-4 col-sm-3 col-xs-12" for="last-name">VAT%
@@ -910,8 +904,6 @@
                     <div class="co-md-8">
                       <div style="float: right;">
                         <table style="font-size: 18px; color: black; font-weight: bold; width: 250px; text-align: right;" class="table table-bordered">
-
-
                           <tr>
                             <td>Line Total :</td>
                             <td><span>
@@ -1755,14 +1747,6 @@
 
     $('.invoice_client_name').selectize({});
 
-
-
-
-
-
-
-
-
     $('#datatable').DataTable({
       dom: 'Blfrtip',
       "lengthMenu": [
@@ -1888,4 +1872,5 @@
   gtag('config', 'UA-71783610-5');
 </script>
 <script src="js/main.js"></script>
+
 </html>

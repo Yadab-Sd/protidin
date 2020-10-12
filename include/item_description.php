@@ -6,32 +6,41 @@
         $result = $db->DBtview('products', "id=$id");
         if ($result) {
             $arr = $result->fetch_assoc();
-            echo "<tr style='font-size: 16px; text-align: center; background-color: #eee; height: 50px;' class='row'>
-                    <td> ".$arr['id']."</td>
+            echo "<tr 
+            style='font-size: 16px; text-align: center; background-color: #eee; height: 50px;'
+             class='row product_id_invoice_row' id='".$arr['id']."'>
+                    <input type='hidden' class='item_line_id' value='".$arr['id']."' />
+                    <td> ".$arr['name']."</td>
                     <td> ".$arr['description']."</td>
-                    <td> ".$arr['stock']."</td>
-                    <td class='item-unit-price'> ".$arr['price']."</td>
+                    <td class='item_line_one_stock'> ".$arr['stock']."</td>
+                    <td> ".$arr['unit']." </td>
                     <td>
                         <input 
                             type='number' 
                             name='quantity' 
-                            class='item-quantity-increase' 
-                            value='1' 
+                            class='item_line_one_quantity'
+                            value='1'
                             min='1'
-                            length='3'
+                            max='".$arr['stock']."'
+                            style='width: 80px'
                         />
                     </td>
-                    <td> 1 </td>
-                    <td> <b class='total-item-price'>".$arr['price']."</b></td>
-                    <td> <button class='each-item-delete'>Remove</button></td>
+                    <td class='item_line_one_price'> ".$arr['price']."</td>
+                    <td> <b class='lineTotalPrice'>".$arr['price']."</b></td>
+                    <td> <b style='cursor: pointer;' class='each-item-delete lineRemove'>Remove</a></b>
                 </tr>
                 <script>
-                    const inputQnt = document.querySelector('.item-quantity-increase');
-
-                    inputQnt.addEventListener('change', (e) => {
-                        document.querySelector('.total-item-price').innerHTML
-                        = e.target.value * document.querySelector('.item-unit-price').innerText
-                    });                
+                    // function totalCal(e) {
+                    //     console.log('===', e.value, $('.item-unit-price'+ e.id).text);
+                    //     $('.total-item-price'+e.id).text
+                    //     = e.value * ($('.item-unit-price'+ e.id).text*1);
+                    // }              
+                    // function deleteItemRow(e) {
+                    //     var node = document.querySelector('#'+e.title);
+                    //     node.parentNode.removeChild(node);
+                    //     return false;
+                    // }
+                    
                 </script>
                 ";
         } else {
